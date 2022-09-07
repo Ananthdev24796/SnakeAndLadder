@@ -18,6 +18,7 @@ public class SnakeAndLadder {
 	final int noOfPlayer=1;
 	int position =0;
 	int diceno =0;
+	int positionmoved;
 	int checkForOption;
 	//  for dice
 	Random r = new Random();
@@ -26,20 +27,20 @@ public class SnakeAndLadder {
 	
 	// for option
 	Random r1 = new Random();
-	checkForOption = r1.nextInt(2);
+	checkForOption = r1.nextInt(3);
 	System.out.println("option"+checkForOption);
 	if(checkForOption == 0) {
 		System.out.println("NO PLAY");
-		position = 0;
-		System.out.println("position"+position);
+		positionmoved = 0;
+		System.out.println("positionMoved"+positionmoved);
 	}else if(checkForOption == 1) {
 		System.out.println("LADDER");
-		position= position+diceno;
-		System.out.println("position"+position);
+		positionmoved= position+diceno;
+		System.out.println("positionMoved"+positionmoved);
 	}else if(checkForOption == 2){
 		System.out.println("SNAKE");
-		position= position+diceno;
-		System.out.println("position"+position);
+		positionmoved= position-diceno;
+		System.out.println("positionMoved"+positionmoved);
 	}
 
 	}
