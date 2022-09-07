@@ -12,16 +12,35 @@ import java.util.Random;
 public class SnakeAndLadder {
 
 	/**
-	 * The Player rolls the die to get a numberbetween 1 to 6. - Use ((RANDOM)) to get the number
+	 * The Player then checks for a Option. They are No Play, Ladder or Snake. - Use ((RANDOM)) to check for
 	 */
 	public static void main(String[] args) {
 	final int noOfPlayer=1;
-	int startpostion =0;
-	int n=0;
+	int position =0;
+	int diceno =0;
+	int checkForOption;
+	//  for dice
 	Random r = new Random();
-	n=r.nextInt(6)+1;
-
-	System.out.println(n);
+	diceno =r.nextInt(6)+1;
+	System.out.println("diceno"+diceno);
+	
+	// for option
+	Random r1 = new Random();
+	checkForOption = r1.nextInt(2);
+	System.out.println("option"+checkForOption);
+	if(checkForOption == 0) {
+		System.out.println("NO PLAY");
+		position = 0;
+		System.out.println("position"+position);
+	}else if(checkForOption == 1) {
+		System.out.println("LADDER");
+		position= position+diceno;
+		System.out.println("position"+position);
+	}else if(checkForOption == 2){
+		System.out.println("SNAKE");
+		position= position+diceno;
+		System.out.println("position"+position);
+	}
 
 	}
 
