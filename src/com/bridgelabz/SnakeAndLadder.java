@@ -12,7 +12,8 @@ import java.util.Random;
 public class SnakeAndLadder {
 
 	/**
-	 * The Player then checks for a Option. They are No Play, Ladder or Snake. - Use ((RANDOM)) to check for
+	 * UC4
+	 * Repeat till the Player reaches the winning position 100. - Note In case the player
 	 */
 	public static void main(String[] args) {
 	final int noOfPlayer=1;
