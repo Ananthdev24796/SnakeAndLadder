@@ -12,6 +12,7 @@ import java.util.Random;
 public class SnakeAndLadder {
 
 	/**
+	 * UC2
 	 * The Player rolls the die to get a numberbetween 1 to 6. - Use ((RANDOM)) to get the number
 	 */
 	public static void main(String[] args) {
