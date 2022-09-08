@@ -12,8 +12,8 @@ import java.util.Random;
 public class SnakeAndLadder {
 
 	/**
-	 * UC4
-	 * Repeat till the Player reaches the winning position 100. - Note In case the player
+	 * UC5
+	 * Ensure the player gets to exact winning position 100. - Note in case the player
 	 */
 	public static void main(String[] args) {
 	final int noOfPlayer=1;
@@ -50,6 +50,9 @@ public class SnakeAndLadder {
 	}
 	//	positionmoved = positionmoved;
 		System.out.println(positionmoved);
+		if(positionmoved > 100) {
+			positionmoved = positionmoved - diceno;
+		}
 	}
 	}
 
